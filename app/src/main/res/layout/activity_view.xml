@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:layout_width="100dp"
+                    android:id="@+id/cardView"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="100dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_view"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:textAlignment="center"
+                            android:background="@drawable/image_back"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:text="Edit Photo"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="name"
+                        android:gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:id="@+id/tv_showname"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are few steps away from completing your profile"
+                        android:layout_alignParentRight="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/relative"
+                android:background="#d0eaf5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Low Demand In Category"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/ll"
+                android:id="@+id/linear"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Identity Verification"
+                    android:textSize="16dp"
+                    android:layout_marginTop="9dp"
+                    android:id="@+id/sendid"
+                    android:textStyle="bold"
+                    android:background="@drawable/border"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About me"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    android:id="@+id/tv_aboutme"
+                    android:background="@drawable/border"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#5465e6"
+                android:layout_below="@+id/linear"
+                android:layout_alignParentBottom="true"
+                android:text="Submit For Approval"
+                android:id="@+id/bt_approval"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
